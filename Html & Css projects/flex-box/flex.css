@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(135, 146, 158);
+}
+.container{
+    height: 100%;
+    display: flex;
+    flex-direction:column;
+    gap: 2rem;
+    padding: 1rem;
+    /* justify-content: center; */
+    align-items:space-between ;
+    /* flex-wrap: nowrap; */
+    /* flex-direction: row-reverse; */
+
+}
+.div{
+    height: 150px;
+    width: 150px;
+    background-color: rgb(77, 152, 152);
+    border: 0.5px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

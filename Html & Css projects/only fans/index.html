@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OnlyFans Clone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>RockSolidFans</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Explore</a>
+      <a href="#">Login</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Exclusive Content from Your Favorite Creators</h2>
+    <button onclick="subscribeAlert()">Subscribe Now</button>
+  </section>
+
+  <section class="creators">
+    <h2>Top Creators</h2>
+    <div class="creator-grid">
+      <div class="creator-card">
+        <img src="https://via.placeholder.com/200" alt="Creator 1">
+        <h3>@LunaRocks</h3>
+        <button onclick="viewProfile('LunaRocks')">View Profile</button>
+      </div>
+      <div class="creator-card">
+        <img src="https://via.placeholder.com/200" alt="Creator 2">
+        <h3>@JayFlame</h3>
+        <button onclick="viewProfile('JayFlame')">View Profile</button>
+      </div>
+      <!-- Add more creators -->
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 RockSolidFans. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

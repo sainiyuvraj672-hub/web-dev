@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100%;
+}
+.container{
+height: 100vh;
+width: 100vw;
+display: flex;
+justify-content: center;
+align-items: center;
+background: #131313;
+}
+.netflix-content{
+    max-width: 70%;
+    margin: 0 auto;
+    border: 0.2rem solid #ff0000;
+    text-align: center;
+    display: flex;
+    padding: 1.6rem;
+    border-radius: 3rem;
+    overflow: hidden;
+    flex-direction: column;
+}
+.netflix-content:hover{
+    transform: scale(1.010);
+    transition-duration: 200ms;
+}
+.logo{
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.netflix-logo{
+    width: auto;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0;
+
+
+}
+.Sign-up{
+    text-align: center;
+    color: #ffff;
+    font-size: 6rem;
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-size: 2rem;
+    align-items: center;
+    margin: 0.5rem;
+}
+.Sign-up{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f4ecec;
+    font-size: 2rem;
+    margin: 0.5rem;
+}
+.netflix-email-passwords{
+    display: flex;
+    flex-direction: column;
+    /* width: 90% auto; */
+    gap: 0.7rem;
+    justify-content: flex-start;    
+}
+.Email{
+    text-align: center;
+    width: 80% auto;
+    height: 30px;
+
+
+}
+.Sign-in{
+    margin: 0.5rem;
+    background-color: #ff0000;
+    width: 500px;
+    text-align: center;
+    height: 50px;
+    border: none;
+    border-radius: 2rem;
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.footer-box{
+    color: lightslategray;
+    font-size: 0.875rem;
+}
+.need-help{
+    color: lightslategray;
+    font-size: 0.875rem;
+}
+
+button{
+    cursor: pointer;
+}

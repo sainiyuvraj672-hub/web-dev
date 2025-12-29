@@ -1,0 +1,95 @@
+/* Background & Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #141e30, #243b55);
+  color: #fff;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  background: linear-gradient(45deg, #00d2ff, #3a47d5);
+  -webkit-text-fill-color: text;
+  -webkit-text-fill-color: text;
+}
+
+header p {
+  font-size: 1.1rem;
+  color: #ccc;
+}
+
+/* Grid Layout */
+.logo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+/* Logo Card with Glassmorphism */
+.logo-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+}
+
+.logo-card img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.logo-card:hover img {
+  transform: scale(1.05);
+}
+
+.logo-card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #f0f0f0;
+}
+
+/* Button */
+.logo-card button {
+  padding: 8px 18px;
+  background: linear-gradient(45deg, #00d2ff, #3a47d5);
+  border: none;
+  color: white;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.logo-card button:hover {
+  background: linear-gradient(45deg, #3a47d5, #00d2ff);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 0.9rem;
+  color: #aaa;
+}

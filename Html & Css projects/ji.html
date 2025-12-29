@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MealScale - Project Details</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        /* 1. THE SETUP */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #e2e8f0;
+            display: grid;
+            gap: 20px;
+            grid-template-columns: 1fr;
+            margin: 0;
+            min-height: 100vh;
+            padding: 20px 0;
+            place-items: center;
+        }
+
+        .slide-container {
+            align-items: center;
+            background-color: #fff;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            height: 720px;
+            justify-content: center;
+            overflow: hidden;
+            padding: 60px;
+            position: relative;
+            width: 1280px;
+        }
+
+        .slide-container>* {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* 2. CONSISTENT TYPOGRAPHY */
+        .slide-container h1,
+        .slide-container h2,
+        .slide-container h3 {
+            color: #333333;
+            font-weight: 700;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+        }
+
+        .slide-container p,
+        .slide-container li {
+            color: #444444;
+            font-family: 'Lato', sans-serif;
+        }
+
+        /* Consistent Font Sizes */
+        .slide-container .slide-title {
+            font-size: 40px;
+            font-weight: 700;
+            margin-bottom: 40px;
+            text-align: left;
+            width: 100%;
+        }
+
+        .slide-container p,
+        .slide-container li {
+            font-size: 20px;
+            line-height: 1.6;
+        }
+
+        .slide-container .content-area {
+            align-items: center;
+            display: flex;
+            flex-grow: 1;
+            justify-content: center;
+            width: 100%;
+        }
+
+        /* 3. LAYOUT: STYLED BULLET POINTS */
+        .bullet-list {
+            max-width: 1000px;
+            width: 100%;
+        }
+
+        .bullet-list ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .bullet-list li {
+            gap: 15px;
+            margin-bottom: 25px;
+            padding-left: 50px;
+            position: relative;
+        }
+
+        .bullet-list i {
+            color: #F39C12;
+            font-size: 28px;
+            left: 0;
+            margin-top: 5px;
+            position: absolute;
+            text-align: center;
+            top: 0;
+        }
+
+        .bullet-list li strong {
+            color: #333333;
+            font-weight: 700;
+        }
+
+        /* 4. THEME: Minimal Orange Accent */
+        #slide5::after {
+            content: '';
+            position: absolute;
+            top: 60px;
+            right: 80px;
+            width: 70px;
+            height: 100px;
+            background-color: #F39C12;
+            z-index: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="slide-container" id="slide5">
+        <h2 class="slide-title">Project details in Brief</h2>
+        <div class="content-area">
+            <div class="bullet-list">
+                <ul>
+                    [cite_start]<li><i class="fa-solid fa-bullseye"></i><strong>The Problem:</strong> Standard recipe apps are inflexible[cite: 26]. [cite_start]They don't let users adjust recipes for the ingredients they have or for different serving sizes[cite: 28].</li>
+                    
+                    [cite_start]<li><i class="fa-solid fa-lightbulb"></i><strong>The Solution:</strong> "MealScale" is a smart Android app that personalizes cooking[cite: 30]. Users enter their desired servings, and the app scales the *entire* recipe.</li>
+                    
+                    <li><i class="fa-solid fa-arrows-left-right-to-line"></i><strong>Smart Scaling:</strong> The app's core feature. [cite_start]It automatically recalculates all ingredient quantities and intelligently adjusts the cooking duration based on the new serving size[cite: 32].</li>
+                    
+                    [cite_start]<li><i class="fa-solid fa-list-check"></i><strong>Guided Cooking:</strong> Provides a clear step-by-step guide for all recipes and an integrated `CountDownTimer` for a confusion-free experience[cite: 33, 40, 41].</li>
+                    
+                    [cite_start]<li><i class="fa-solid fa-database"></i><strong>Offline First:</strong> Built with Kotlin and XML, using a local SQLite database to store all recipe data, allowing 100% offline functionality[cite: 35, 36, 42].</li>
+                    
+                    [cite_start]<li><i class="fa-solid fa-graduation-cap"></i><strong>Project Goal:</strong> A minor project for the BCA-V Sem, demonstrating mobile development, database management, and modern UI/UX design[cite: 4, 34].</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+```eof
